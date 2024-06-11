@@ -1,6 +1,6 @@
 html {
-  height: 100%;
-  width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 @font-face {
@@ -8,30 +8,40 @@ html {
 	src: url(TAN-NIMBUS.ttf);
 }
 
-body,h1,h2,h3,h4,h5,h6 {font-family:"Lato", "Helvetica";}
-body, html {
+body,h1,h2,h3,h4,h5,h6 {
+	font-family: "Lato", "Helvetica";
+}
+
+body,html {
 	height: 100%;
 	color: #777;
 	line-height: 1.8;
 }
 
-.theme-gradient{
-	background-image: linear-gradient(to bottom right,#7e97d3,#21386A);
+.theme-gradient {
+	background-image: linear-gradient(to bottom right, #9BBBF8, #5B72FF);
 	min-height: 400px;
+}
+
+.theme-color{
+	background-color: #9BBBF8;
 }
 
 .custom-checkbox {
 	width: 300px;
 	height: 50px;
 }
+
 .custom-checkbox input#status {
 	display: none;
 }
-.custom-checkbox input#status + label {
+
+.custom-checkbox input#status+label {
 	height: 100%;
 	width: 100%;
 }
-.custom-checkbox input#status + label > .status-switch {
+
+.custom-checkbox input#status+label>.status-switch {
 	cursor: pointer;
 	width: 100%;
 	height: 100%;
@@ -42,7 +52,9 @@ body, html {
 	padding: 3px;
 	border-radius: 3px;
 }
-.custom-checkbox input#status + label > .status-switch:before, .custom-checkbox input#status + label > .status-switch:after {
+
+.custom-checkbox input#status+label>.status-switch:before,
+.custom-checkbox input#status+label>.status-switch:after {
 	border-radius: 2px;
 	height: calc(100% - 6px);
 	width: calc(50% - 3px);
@@ -52,7 +64,8 @@ body, html {
 	justify-content: center;
 	transition: all 0.3s ease;
 }
-.custom-checkbox input#status + label > .status-switch:before {
+
+.custom-checkbox input#status+label>.status-switch:before {
 	background-color: white;
 	color: black;
 	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
@@ -60,24 +73,28 @@ body, html {
 	z-index: 10;
 	content: attr(data-unchecked);
 }
-.custom-checkbox input#status + label > .status-switch:after {
+
+.custom-checkbox input#status+label>.status-switch:after {
 	right: 0;
 	content: attr(data-checked);
 }
-.custom-checkbox input#status:checked + label > .status-switch {
+
+.custom-checkbox input#status:checked+label>.status-switch {
 	background-color: grey;
 }
-.custom-checkbox input#status:checked + label > .status-switch:after {
+
+.custom-checkbox input#status:checked+label>.status-switch:after {
 	left: 0;
 	content: attr(data-unchecked);
 }
-.custom-checkbox input#status:checked + label > .status-switch:before {
+
+.custom-checkbox input#status:checked+label>.status-switch:before {
 	color: grey;
 	left: 50%;
 	content: attr(data-checked);
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4 {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -89,11 +106,17 @@ body, html {
 	min-height: 500px;
 }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+.w3-wide {
+	letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+	cursor: pointer;
+}
 
 @media only screen and (max-device-width: 1600px) {
-	.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+
+	.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4 {
 		background-attachment: scroll;
 		min-height: 400px;
 	}
