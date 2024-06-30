@@ -22,6 +22,9 @@ a:hover{
 	color: black;
 }
 
+.hidden_mobile {
+}
+
 .theme-gradient {
 	background-image: linear-gradient(to bottom right, #9BBBF8, #5B72FF);
 	min-height: 400px;
@@ -73,5 +76,9 @@ a:hover{
 @media (max-width: 600px) {
 	.bgimg-1{
 		background-image: url('https://media.licdn.com/dms/image/D4E22AQE2y_XZzsCxJQ/feedshare-shrink_800/0/1716405628397?e=2147483647&v=beta&t=oyWJ4dboR2DJgWq9uSLqZZWoH2xF2vgkS0vi-Jn9_ug');
+	}
+	
+	.hidden_mobile {
+		display: none;
 	}
 }
