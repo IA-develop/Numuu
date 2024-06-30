@@ -22,7 +22,7 @@ a:hover{
 	color: black;
 }
 
-.mobile-alter {
+.mobile-alter,.hide-mobile {
 }
 
 .colored-hr {
@@ -96,6 +96,9 @@ a:hover{
 	}
 	.mobile-alter {
 		margin-top: 200px;
+	}
+	.hide-mobile {
+		display: none;
 	}
 	
 }
