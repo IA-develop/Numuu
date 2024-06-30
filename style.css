@@ -22,7 +22,16 @@ a:hover{
 	color: black;
 }
 
-.hidden_mobile {
+.mobile-alter {
+}
+
+.colored-hr {
+	border: 0;
+	height: 4px;
+	background-color: #5B72FF; 
+	width: calc(100% - 40px);
+	border-radius: 3px;
+	margin: auto;
 }
 
 .theme-gradient {
@@ -34,6 +43,15 @@ a:hover{
 	background-color: #9BBBF8;
 }
 
+.theme-color-gradient {
+	cursor: pointer;
+	background-image: linear-gradient(to bottom right, #9BBBF8,#5a80c7);
+}
+.theme-color-gradient:hover {
+	background-image: linear-gradient(to bottom right, #5a80c7,#2c4f91);
+}
+
+
 .bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4 {
 	background-attachment: fixed;
 	background-position: center;
@@ -42,8 +60,7 @@ a:hover{
 }
 
 .bgimg-1 {
-	background-image: /*url('https://media.licdn.com/dms/image/D4E22AQE2y_XZzsCxJQ/feedshare-shrink_800/0/1716405628397?e=2147483647&v=beta&t=oyWJ4dboR2DJgWq9uSLqZZWoH2xF2vgkS0vi-Jn9_ug'); */
-	url(background.jpg);
+	background-image: url(background.jpg);
 	min-height: 400px;
   object-fit: cover;
 }
@@ -74,11 +91,11 @@ a:hover{
 }
 
 @media (max-width: 600px) {
-	.bgimg-1{
+	.bgimg-1 {
 		background-image: url('https://media.licdn.com/dms/image/D4E22AQE2y_XZzsCxJQ/feedshare-shrink_800/0/1716405628397?e=2147483647&v=beta&t=oyWJ4dboR2DJgWq9uSLqZZWoH2xF2vgkS0vi-Jn9_ug');
 	}
-	
-	.hidden_mobile {
-		display: none;
+	.mobile-alter {
+		margin-top: 200px;
 	}
+	
 }
